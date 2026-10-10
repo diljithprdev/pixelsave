@@ -1,5 +1,7 @@
 # PixelSave
 
+<img src="docs/icon-512.png" width="96" alt="PixelSave icon">
+
 Android share target that saves shared images to `Pictures/PixelSave` as original files, with optional SHA-256 verification.
 
 ## Usage
