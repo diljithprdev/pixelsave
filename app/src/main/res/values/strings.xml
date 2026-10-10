@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PixelSave</string>
+    <string name="tagline">Share an image to PixelSave to save the original file.</string>
+    <string name="images_saved">Images saved: %1$d</string>
+    <string name="last_saved_title">Last saved</string>
+    <string name="no_saves_yet">Share an image to get started.</string>
+    <string name="settings">Settings</string>
+    <string name="settings_title">Settings</string>
+    <string name="saved_toast">Saved %1$d image(s) to Pictures/PixelSave</string>
+    <string name="save_failed_toast">Could not save the shared image</string>
+    <string name="no_images_error">No images found in the shared content</string>
+    <string name="progress_saving">Saving %1$d of %2$d\u2026</string>
+    <string name="storage_permission_needed">Storage permission is required to save images on this Android version.</string>
+    <string name="notification_channel">Saved images</string>
+    <string name="notification_title">Saved to PixelSave</string>
+    <string name="notification_title_multi">Saved %1$d images to PixelSave</string>
+    <string name="setting_verify">Verify integrity (SHA-256)</string>
+    <string name="setting_verify_desc">Compare source and saved file hashes after every copy.</string>
+    <string name="setting_notify">Completion notification</string>
+    <string name="setting_notify_desc">Show a notification when images have been saved.</string>
+    <string name="setting_location">Save location</string>
+    <string name="reset_counter">Reset saved counter</string>
+    <string name="counter_reset">Counter reset</string>
+</resources>

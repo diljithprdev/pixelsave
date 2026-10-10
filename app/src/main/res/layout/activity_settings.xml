@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchVerify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/setting_verify"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="4dp"
+        android:text="@string/setting_verify_desc"
+        android:textColor="@color/textSecondary"
+        android:textSize="13sp" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchNotify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/setting_notify"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginStart="4dp"
+        android:text="@string/setting_notify_desc"
+        android:textColor="@color/textSecondary"
+        android:textSize="13sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/setting_location"
+        android:textColor="@color/textSecondary"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/locationValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:fontFamily="monospace"
+        android:text="Pictures/PixelSave"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/resetCounterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/reset_counter" />
+
+</LinearLayout>
