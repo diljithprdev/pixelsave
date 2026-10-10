@@ -1,8 +1,8 @@
-# PixelSave — save shared images as original files
+# PixelSave
 
-Android share-target that saves images to `Pictures/PixelSave` without recompression. Share from any app, get the original file + SHA-256 integrity check.
+Android share target that saves shared images to `Pictures/PixelSave` as original files, with optional SHA-256 verification.
 
-## Use
+## Usage
 
 1. Share an image (or several) from any app → choose PixelSave
 2. Files land in `Pictures/PixelSave`, counter + notification confirm
@@ -20,12 +20,12 @@ app/src/main/java/com/pixelsave/app/
 └── util/                  FileNameUtils, MimeTypes, Streams, Prefs, ShareIntents, Format
 ```
 
-## Details
+## Implementation
 
 - Scoped storage on Android 10+, `WRITE_EXTERNAL_STORAGE` only pre-29
-- `IS_PENDING=1` during copy so half-written files never show in gallery
-- Integrity states: `VERIFIED / FAILED / SKIPPED`, surfaced per file
-- No bitmap decode in app process — stream copy only (enforced by test)
+- `IS_PENDING=1` during copy so partial files stay hidden from gallery
+- Integrity states `VERIFIED / FAILED / SKIPPED`, reported per file
+- Stream copy only, no bitmap decode in app process
 
 ## Tests
 
